@@ -9,7 +9,7 @@ const pedido = {
 
 let persona = prompt("cuantas personas haran su reserva?");
 
-const pedidos = [pedido];
+const pedidos = [];
 
 for (let index = 0; index <persona; index++) {
   
