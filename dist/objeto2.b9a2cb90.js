@@ -127,7 +127,7 @@ var pedido = {
   }
 };
 var persona = prompt("cuantas personas haran su reserva?");
-var pedidos = [];
+var pedidos = [pedido];
 
 for (var index = 0; index < persona; index++) {
   pedido.nombre = prompt("Dime solo Tu nombre porfavor, numero ".concat(index));
@@ -137,7 +137,7 @@ for (var index = 0; index < persona; index++) {
 }
 
 for (var i = 0; i < pedidos.length; i++) {
-  console.log(pedidos.misDatos());
+  console.log(pedido.misDatos());
 }
 },{}],"../../AppData/Roaming/nvm/v14.4.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -167,7 +167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64020" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64701" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

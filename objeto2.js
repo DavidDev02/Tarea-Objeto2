@@ -2,14 +2,14 @@ const pedido = {
   nombre: "",
   apellido:"",
   edad: 0,
-  misDatos () {
+  misDatos() {
       return ` su nombre completo es: ${this.nombre} ${this.apellido} y su edad: ${this.edad}`;
   }
 };
 
 let persona = prompt("cuantas personas haran su reserva?");
 
-const pedidos = [];
+const pedidos = [pedido];
 
 for (let index = 0; index <persona; index++) {
   
@@ -20,5 +20,5 @@ for (let index = 0; index <persona; index++) {
 }
 
 for (let i = 0; i < pedidos.length; i++) {
-  console.log(pedidos.misDatos());
+  console.log(pedido.misDatos());
 }
