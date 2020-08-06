@@ -3,11 +3,11 @@ const pedido = {
   apellido:"",
   edad: 0,
   misDatos() {
-      return ` su nombre completo es: ${this.nombre} ${this.apellido} y su edad: ${this.edad}`;
+      return ` Su nombre completo es: ${this.nombre} ${this.apellido} y su edad es: ${this.edad} años`;
   }
 };
 
-let persona = prompt("cuantas personas haran su reserva?");
+let persona = prompt("Cuantas personas haran su reserva?");
 
 const pedidos = [];
 
@@ -20,5 +20,5 @@ for (let index = 0; index <persona; index++) {
 }
 
 for (let i = 0; i < pedidos.length; i++) {
-  console.log(pedido.misDatos());
+  console.log(pedidos[i].misDatos());
 }

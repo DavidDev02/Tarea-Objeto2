@@ -123,10 +123,10 @@ var pedido = {
   apellido: "",
   edad: 0,
   misDatos: function misDatos() {
-    return " su nombre completo es: ".concat(this.nombre, " ").concat(this.apellido, " y su edad: ").concat(this.edad);
+    return " Su nombre completo es: ".concat(this.nombre, " ").concat(this.apellido, " y su edad es: ").concat(this.edad, " a\xF1os");
   }
 };
-var persona = prompt("cuantas personas haran su reserva?");
+var persona = prompt("Cuantas personas haran su reserva?");
 var pedidos = [];
 
 for (var index = 0; index < persona; index++) {
@@ -137,7 +137,7 @@ for (var index = 0; index < persona; index++) {
 }
 
 for (var i = 0; i < pedidos.length; i++) {
-  console.log(pedido.misDatos());
+  console.log(pedidos[i].misDatos());
 }
 },{}],"../../AppData/Roaming/nvm/v14.4.0/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -167,7 +167,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65157" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60790" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
